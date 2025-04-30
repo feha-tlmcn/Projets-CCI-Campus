@@ -1,0 +1,276 @@
+
+
+.left{
+    flex: 0 0 auto;
+}
+
+.center{
+    flex: 1 1 auto; 
+    text-align: center;
+}
+
+.moi {
+    margin-top: 60px; /* espace après le bouton */
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3.75rem;
+    color: rgb(240, 128, 128);
+    
+}
+
+body{
+    background: url(./img/bg5.png) center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow Condensed', cursive;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 99, 71);
+    border-radius: 8px;
+    padding: 12px 18px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+    
+.button:hover{
+    background-color: rgb(255, 80, 60);
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+    transform: scale(1.05);
+}
+    
+.button:active{
+    transform: scale(0.95);
+    box-shadow: 
+    inset -2px -2px 3px #000,
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6)
+    ;
+}
+
+
+
+.intro{
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: 'Barlow Condensed';
+    color: #000;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 50px;
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(188, 143, 143); 
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.acquis>div{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: center;
+    max-width: 300px;
+}
+.acquis{
+    font-size: 1.75rem;
+    font-family: 'Barlow Condensed';
+    margin-bottom: 10px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-style: bold;
+}
+
+.projets{
+    font-size: 2.75rem;
+    text-align: center;
+    color: rgb(240, 128, 128);
+    font-family: 'Barlow Condensed';
+    margin: 0; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+
+h4{
+    color: rgb(240, 128, 128);
+    font-size: 1.25rem;
+    font-family: 'Barlow Condensed'; 
+    margin-bottom: 0px; 
+}
+
+
+.colonnes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* utile pour responsive */
+    gap: 40px;
+    align-items: flex-start;
+    padding: 20px 
+    
+    
+}
+
+.colonne-gauche{
+    overflow: hidden;
+    flex: 1;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
+    padding: 70px; 
+    margin: 70px;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.colonne-droite{
+    /* chaque colonne prend 50% de l'espace */
+    flex: 1;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
+    padding: 70px; 
+    margin: 70px;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.img{
+    display: block;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+ul{
+    color: #000;
+    font-family: 'Barlow Condensed'; 
+}
+p{
+    color: #000;
+    font-family: 'Barlow Condensed'; 
+}
+.button-cv{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: rgb(255, 99, 71) ;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 0 60px -10px rgb(255, 69, 0);
+    transition: all .3s;
+}
+
+.button-cv:hover{
+    transform: scale(1.05);
+    background-color: rgb(255, 99, 71);
+    box-shadow: 0 0 60px -2px rgb(255, 69, 0);
+}
+
+.button-cv:active {
+    transform: scale(0.95);
+    box-shadow:
+      inset -2px -2px 3px #000,
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown{
+    max-width: 300px;
+    flex: 1;
+    border-radius: 5px;
+    color:white;
+    background-color:rgb(240, 128, 128) ;
+    overflow: hidden;
+}
+
+.btn-top{
+    padding: 20px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(240, 128, 128);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    width:20px;
+}
+
+.bloc-links{
+    padding: 0 20px;
+    transition: height 0.3s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    background: rgb(240, 128, 128);
+    border-radius: 8px;
+}
+.dropdown.open .bloc-links {
+    height: 100px;
+}
+
+.bloc-links li{
+    list-style-type: none;
+    padding: 5px 0;
+    
+}
+.block-links li a{
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+}
+.bloc-links li:last-child{
+    padding-bottom: 25px;
+}
+
+.boutons{
+    /* aligne horizontalement */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bloc{
+    /* aligne verticalement */
+    flex:1; /* leur donne la même place */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}

@@ -1,0 +1,80 @@
+                        /* Titre */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+h1{
+    /* font size tjrs en rem */
+    font-size: 5rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: rgb(233, 150, 122);
+    font-family: 'Dancing Script';
+    margin: 0;
+} 
+body{
+    background: url(./img/bg1.jpg) center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
+    border-radius: 12px;
+}
+
+@media (max-height: 500px){
+    body{
+        align-items: flex-start;
+        padding-top: 40px;
+    }}
+
+.button{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: rgb(255, 99, 71) ;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 0 60px -10px rgb(255, 69, 0);
+    transition: all .3s;
+}
+
+.button:hover{
+    
+    background-color: rgb(255, 99, 71);
+    box-shadow: 0 0 60px -2px rgb(255, 69, 0);
+}
+
+  .button:active {
+    box-shadow:
+      inset -2px -2px 3px #000,
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+p{
+    font-size: 2.25rem;
+    color: rgb(85, 107, 47);
+    margin: 0;
+    padding: 10px 0;
+    line-height: 2.5px;
+    text-shadow: 1px 1px 2px black;
+}
