@@ -10,6 +10,15 @@ h1{
     font-family: 'Dancing Script';
     margin: 0;
 } 
+
+.fade-in,.fade-in-btn{ 
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+}
+.fade-in.appear, .fade-in-btn{
+    opacity: 1;
+}
+
 body{
     background: url(./img/bg1.jpg) center/cover;
     background-size: cover;

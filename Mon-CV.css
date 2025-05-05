@@ -7,17 +7,23 @@
     text-align: center;
 }
 
-.moi {
-    margin-top: 60px; /* espace après le bouton */
+#sect1{
+    background: url(./img/bg7.png) center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 60px;
     text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 3.75rem;
-    color: rgb(240, 128, 128);
     
+
 }
 
-body{
-    background: url(./img/bg5.png) center/cover;
+#sect2{
+    background-color: rgb(255, 228, 225);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -29,10 +35,49 @@ body{
     text-align: center;
 }
 
+#sect3{ 
+    background-color: rgb(245, 245, 245);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.titre{
+    margin-top: 60px; /* espace après le bouton */
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 165, 0);
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-bottom: 5px;
+}
+
+.moi {
+    margin-top: 60px; /* espace après le bouton */
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 160, 122);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 300px;
+    margin-bottom: 5px;
+}
+
+
+
 .button{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     text-decoration: none;
     color: white;
     font-family: 'Barlow Condensed', cursive;
@@ -40,11 +85,11 @@ body{
     letter-spacing: 1px;
     background-color: rgb(255, 99, 71);
     border-radius: 8px;
-    padding: 12px 24px;
+    padding: 10px 10px;
     box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
     transition: all 0.3s ease;
     display: inline-block;
-    width: 180px;
+    width: 70px;
 }
     
 .button:hover{
@@ -68,8 +113,11 @@ body{
     color: #000;
     line-height: 1.6;
     display: block;
+    justify-content: flex-end;
+    margin-right: 100px;
     margin-bottom: 50px;
-    margin: 60px auto;
+    margin: 60px;
+    margin-left: 1000px;
     padding: 40px;
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -78,6 +126,14 @@ body{
     box-shadow: 0 8px 32px 0 rgb(188, 143, 143); 
     padding: 40px;
     border-radius: 12px;
+}
+
+.fade-in,.fade-in-btn{ 
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.fade-in.appear, .fade-in-btn{
+    opacity: 1;
 }
 
 .acquis>div{
@@ -99,9 +155,9 @@ body{
 }
 
 .projets{
-    font-size: 2.75rem;
+    font-size: 3.75rem;
     text-align: center;
-    color: rgb(240, 128, 128);
+    color: white;
     font-family: 'Barlow Condensed';
     margin: 0; 
     display: block;
@@ -113,7 +169,7 @@ body{
 
 
 h4{
-    color: rgb(240, 128, 128);
+    color: rgb(255, 218, 185);
     font-size: 1.25rem;
     font-family: 'Barlow Condensed'; 
     margin-bottom: 0px; 
@@ -159,7 +215,7 @@ h4{
     max-width: 100%;
 }
 
-.img{
+.img-server{
     display: block;
     max-width: 300px;
     height: auto;
@@ -167,6 +223,15 @@ h4{
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform .1s;
+    margin-top: 70px;
+}
+
+.img-server:hover{
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+
 }
 
 ul{
@@ -215,7 +280,7 @@ p{
 
 .btn-top{
     padding: 30px;
-    width: 100%;
+    width: 200px;
     border: none;
     font-size: 20px;
     display: flex;
@@ -224,7 +289,7 @@ p{
     cursor: pointer;
     border-radius: 5px;
     color: white;
-    width:20px;
+    
 }
 
 .bloc-links{
