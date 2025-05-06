@@ -1,5 +1,5 @@
 
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 .center{
     flex: 1 1 auto; 
     text-align: center;
@@ -51,7 +51,7 @@
 .titre{
     margin-top: 60px; /* espace après le bouton */
     text-align: center;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Dancing Script', cursive, strong;
     font-size: 3rem;
     color: rgb(255, 182, 193);
     display: flex;
