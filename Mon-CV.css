@@ -34,7 +34,9 @@
 }
 
 #sect3{ 
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+    background: url(./img/bg6.png) center/cover;
+    background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -61,7 +63,7 @@
 .moi {
     font-family: 'Barlow Condensed', sans-serif; 
     font-size: 3rem;
-    color: rgb(255, 160, 122);
+    color: rgb(105, 105, 105);
     display: flex;
     justify-content: flex-start;
     margin-left: 450px;
@@ -169,7 +171,7 @@
 
 
 h4{
-    color: rgb(255, 218, 185);
+    color: rgb(105, 105, 105);
     font-size: 1.25rem;
     font-family: 'Barlow Condensed'; 
     margin-bottom: 0px; 
