@@ -131,7 +131,7 @@
 
 .fade-in,.fade-in-btn{ 
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.7s ease-in;
 }
 .fade-in.appear, .fade-in-btn{
     opacity: 1;
@@ -176,56 +176,37 @@ h4{
     margin-bottom: 0px; 
 }
 
-
-.colonnes{
+.container{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* utile pour responsive */
     gap: 40px;
-    align-items: flex-start;
-    padding: 20px 
 }
 
-.colonnes-wrapper{
+
+.gauche-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 5px;
+    gap: 40px;
+    flex: 2;
+}
+
+.colonne-gauche,.colonne-gauche2{
+    overflow: hidden;
+    flex: 1;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
+    padding: 70px; 
+    margin: 70px;
+    border-radius: 12px;
+    font-size: 1.15rem;
     max-width: 800px;
-}
-
-.colonne-gauche{
-    overflow: hidden;
-    flex: 1;
-    text-align: justify;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
-    padding: 70px; 
-    margin: 70px;
-    border-radius: 12px;
-    font-size: 1.15rem;
-}
-
-.colonne-gauche2{
-    overflow: hidden;
-    flex: 1;
-    text-align: justify;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
-    padding: 70px; 
-    margin: 70px;
-    padding-top: 10px;
-    border-radius: 12px;
-    font-size: 1.15rem;
+    max-height: 800px;
 }
 
 
 .colonne-droite{
-    /* chaque colonne prend 50% de l'espace */
     flex: 1;
     text-align: justify;
     background-color: rgba(255, 255, 255, 0.6);
@@ -233,13 +214,13 @@ h4{
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
     padding: 70px; 
-    margin: 70px;
     border-radius: 12px;
-    max-width: 400px;
-    font-size: 1.15rem;
+    max-width: 550px;
+    max-height: 800px;
+    margin-top: 550px;
 }
 
-.img-server{
+.img-server, .img-lilou{
     display: block;
     max-width: 300px;
     height: auto;
@@ -250,8 +231,13 @@ h4{
     transition: transform .1s;
     margin-top: 70px;
 }
-
 .img-server:hover{
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+
+}
+.img-lilou:hover{
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
