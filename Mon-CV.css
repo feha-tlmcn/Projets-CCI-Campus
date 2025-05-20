@@ -33,21 +33,6 @@
     text-align: center;
 }
 
-#sect3{ 
-    /* background-color: rgb(245, 245, 245); */
-    background: url(./img/bg6.png) center/cover;
-    background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    text-align: center;
-}
-
 .titre{
     margin-top: 60px; /* espace après le bouton */
     text-align: center;
@@ -58,6 +43,7 @@
     justify-content: center;
     margin-right: 100px;
     margin-bottom: 5px;
+    margin-left: 145px;
 }
 
 .moi {
@@ -65,7 +51,7 @@
     color: rgb(105, 105, 105);
     display: flex;
     justify-content: flex-start;
-    margin-left: 315px;
+    margin-left: 400px;
     margin-bottom: 2px;
 }
 
@@ -158,7 +144,7 @@
 .projets{
     font-size: 3.75rem;
     text-align: center;
-    color: white;
+    color: rgb(255, 133, 151);
     font-family: 'Faustina';
     margin: 0; 
     display: block;
@@ -220,7 +206,7 @@ h4{
     margin-top: 550px;
 }
 
-.img-server, .img-lilou{
+.img-server, .logo-lilou{
     display: block;
     max-width: 300px;
     height: auto;
@@ -237,7 +223,7 @@ h4{
     transform: scale(1.25);
 
 }
-.img-lilou:hover{
+.logo-lilou:hover{
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
