@@ -1,5 +1,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .center{
     flex: 1 1 auto; 
     text-align: center;
@@ -16,8 +23,6 @@
     padding-top: 40px;
     padding-bottom: 60px;
     text-align: center;
-    
-
 }
 
 #sect2{
@@ -203,7 +208,7 @@ h4{
     border-radius: 12px;
     max-width: 550px;
     max-height: 800px;
-    margin-top: 550px;
+    margin-top: 300px;
 }
 
 .img-server, .logo-lilou{
@@ -251,6 +256,7 @@ p{
     padding: 20px 24px;
     box-shadow: 0 0 60px -10px rgb(250, 70, 97);
     transition: all .3s;
+ 
 }
 
 .button-cv:hover{
@@ -266,9 +272,14 @@ p{
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .dropdown{
     max-width: 300px;
-    flex: 1;
     border-radius: 5px;
     color:white;
     background-color:rgb(240, 128, 128) ;
@@ -281,21 +292,23 @@ p{
     border: none;
     font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background: rgb(255, 133, 151);
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     color: white;
-    
 }
 
+
 .bloc-links{
+    position: absolute;
+    width: 200px;
     padding: 0 20px;
     transition: height 0.3s ease-in-out;
     height: 0;
     overflow: hidden;
     background: rgb(255, 133, 151);
-    border-radius: 8px;
+    border-radius:  0 0 5px 5px;
 }
 .dropdown.open .bloc-links {
     height: 100px;
@@ -309,21 +322,12 @@ p{
 .block-links li a{
     font-size: 18px;
     color: white;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 .bloc-links li:last-child{
     padding-bottom: 25px;
 }
 
-.boutons{
-    /* aligne horizontalement */
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .bloc{
     /* aligne verticalement */
@@ -331,5 +335,6 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     margin: 100px 0;
 }
