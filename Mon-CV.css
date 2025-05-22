@@ -39,7 +39,7 @@
 }
 
 .titre{
-    margin-top: 60px; /* espace après le bouton */
+    
     text-align: center;
     font-family: 'Dancing Script', cursive, strong;
     font-size: 5rem;
@@ -284,6 +284,7 @@ p{
     color:white;
     background-color:rgb(240, 128, 128) ;
     overflow: hidden;
+    margin-right: 30px;
 }
 
 .btn-top{

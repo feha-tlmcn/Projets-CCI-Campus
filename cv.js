@@ -15,9 +15,12 @@ window.addEventListener("DOMContentLoaded", function () {
       const isClosed = blocLinks.style.height === '' || blocLinks.style.height === '0px';
   
       if (isClosed) {
-        const fullHeight = blocLinks.scrollHeight;
+        // calcule automatiquement la hauteur totale nécessaire pour afficher tout le contenu.
+        const fullHeight = blocLinks.scrollHeight; 
+        // ouvre le bloc en l’animant.
         blocLinks.style.height = fullHeight + "px";
         console.log("Ouverture : height =", fullHeight);
+        // referme le bloc.
       } else {
         blocLinks.style.height = "0px";
         console.log("Fermeture");
