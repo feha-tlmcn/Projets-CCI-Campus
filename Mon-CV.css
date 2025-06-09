@@ -164,24 +164,28 @@ h4{
     color: rgb(255, 133, 151);
     font-size: 2rem;
     font-family: 'Dancing Script', cursive, strong;
-    margin-bottom: 0px; 
+    margin-bottom: 20px;
+    margin-top: 20px; 
 }
 
 .container{
     display: flex;
+    align-items: center; /* ✅ centre verticalement */
     gap: 40px;
+    
 }
 
 
 .gauche-wrapper{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
     flex: 2;
 }
 
 .colonne-gauche,.colonne-gauche2{
-    overflow: hidden;
+    border: 2px ;
     flex: 1;
     text-align: justify;
     background-color: rgba(255, 255, 255, 0.6);
@@ -193,11 +197,12 @@ h4{
     border-radius: 12px;
     font-size: 1.15rem;
     max-width: 800px;
-    max-height: 800px;
+    
 }
 
 
 .colonne-droite{
+    border: 2px ;
     flex: 1;
     text-align: justify;
     background-color: rgba(255, 255, 255, 0.6);
@@ -205,13 +210,41 @@ h4{
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgb(188, 143, 143);
     padding: 70px; 
+    margin: 70px;
     border-radius: 12px;
-    max-width: 550px;
-    max-height: 800px;
-    margin-top: 300px;
+    font-size: 1.15rem;
+    max-width: 550px;  
 }
 
-.img-server, .logo-lilou{
+.img-wrapper {
+    border: 2px ;
+    overflow: visible;
+}
+
+.img-CCICampus{
+    display: block;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform .1s;
+    margin-top: 70px; 
+}
+
+.img-server{
+    display: block;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: 50px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform .1s;
+ }
+
+.logo-lilou{
     display: block;
     max-width: 300px;
     height: auto;
@@ -220,8 +253,17 @@ h4{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     transition: transform .1s;
-    margin-top: 70px;
+    margin-top: 50px;
+    
+    
 }
+
+.img-CCICampus:hover{
+     -ms-transform: scale(1.25);
+     -webkit-transform: scale(1.25);
+      transform: scale(1.25);
+}
+
 .img-server:hover{
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
